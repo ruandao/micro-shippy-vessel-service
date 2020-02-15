@@ -1,2 +1,2 @@
 build:
-	protoc -I=. --go_out=plugin=micro:. proto/vessel/vessel.proto
+	protoc -I=. --go_out=plugins=micro:. proto/vessel/vessel.proto
