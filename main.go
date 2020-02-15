@@ -1,4 +1,4 @@
-package vessel_service
+package main
 
 import (
 	"context"
