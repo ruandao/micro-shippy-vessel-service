@@ -64,6 +64,6 @@ func UnmarshalVessel(vessel *StoreVessel) *pb.Vessel {
 }
 
 type repository interface {
-	FindAvailable(ctx context.Context, spec *StoreSpecification) (*StoreResponse, error)
-	Create(ctx context.Context, vessel *StoreVessel) (*StoreResponse, error)
+	FindAvailable(ctx context.Context, spec *StoreSpecification) (*StoreVessel, error)
+	Create(ctx context.Context, vessel *StoreVessel) error
 }
