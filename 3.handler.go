@@ -15,7 +15,7 @@ func (h *handler) FindAvailable(ctx context.Context, spec *pb.Specification, res
 		return err
 	}
 
-	resp.Vessel = vessel
+	resp.Vessel = UnmarshalVessel(vessel)
 	return nil
 }
 
