@@ -1,4 +1,4 @@
-package main
+package lib
 
 import (
 	"context"
@@ -63,7 +63,7 @@ func UnmarshalVessel(vessel *StoreVessel) *pb.Vessel {
 	}
 }
 
-type repository interface {
+type Repository interface {
 	FindAvailable(ctx context.Context, spec *StoreSpecification) (*StoreVessel, error)
 	Create(ctx context.Context, vessel *StoreVessel) error
 }
