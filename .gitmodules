@@ -1,0 +1,3 @@
+[submodule "ser"]
+	path = ser
+	url = git@github.com:ruandao/micro-shippy-vessel-service-ser.git
